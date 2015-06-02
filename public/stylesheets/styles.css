@@ -1,0 +1,96 @@
+@import url(http://fonts.googleapis.com/css?family=Changa+One);
+
+#game {
+  font-family: "Changa One", sans-serif;
+  letter-spacing: .05em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 100%;
+}
+
+#header {
+  padding-bottom: 1em;
+}
+
+.button {
+  text-align: center;
+  margin: 1em;
+  color: red;
+}
+
+form {
+  text-align: center;
+}
+
+input[type=text] {
+  border: 1px solid #000;
+  border-radius: 10px;
+
+  -webkit-appearance: none;
+}
+
+#header h1 {
+  text-align: center;
+  font-size: 60px;
+  color: #FFF;
+  font-family: "Changa One", sans-serif;
+  font-variant: small-caps;
+  letter-spacing: .05em;
+  text-shadow:1px 1px 0 #000,
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  0px 1px 0 #000,
+  1px 0px 0 #000,
+  0px -1px 0 #000,
+  -1px 0px 0 #000,
+}
+
+.squares {
+  background-color: #1D80CF;
+  border:#000 1em solid;
+  margin: auto;
+  float: left;
+  width: 80%;
+  height: 50em;
+}
+
+.squares > div{
+  width: 30%;
+  height: 30%;
+  border: .15em solid yellow;
+	float:left;
+	margin: .3em;
+	text-align:center;
+}
+
+.squares > div:hover {
+  border-color: orange;
+}
+
+.answer {
+  float: left;
+  border: 3px solid black;
+}
+
+#square {
+  text-align: center;
+}
+
+#cast {
+  height:540px;
+  width: 20%;
+  height: 50em;
+  float: right;
+}
+
+#cast > div {
+  horizontal-align: middle;
+  width: 90%;
+  height: 5%;
+  border: .1em solid black;
+  background: #000;
+  color: #fff;
+}
