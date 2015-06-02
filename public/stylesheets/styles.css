@@ -1,8 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Changa+One);
 
-#game {
-  font-family: "Changa One", sans-serif;
-  letter-spacing: .05em;
+#content {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -50,7 +48,7 @@ input[type=text] {
 
 .squares {
   background-color: #1D80CF;
-  border:#000 1em solid;
+  border:#000 .3em solid;
   margin: auto;
   float: left;
   width: 80%;
@@ -58,12 +56,14 @@ input[type=text] {
 }
 
 .squares > div{
+  border-bottom: none;
   width: 30%;
   height: 30%;
   border: .15em solid yellow;
 	float:left;
-	margin: .3em;
+	margin: .5em;
 	text-align:center;
+  overflow: hidden;
 }
 
 .squares > div:hover {
@@ -71,11 +71,10 @@ input[type=text] {
 }
 
 .answer {
-  
-  border: 3px solid black;
+  border: 30px solid black;
 }
 
-#square {
+.square {
   text-align: center;
 }
 
@@ -93,4 +92,5 @@ input[type=text] {
   border: .1em solid #fff;
   background: #000;
   color: #fff;
+  margin: .2em;
 }

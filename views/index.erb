@@ -1,14 +1,21 @@
-  <div id="header">
-    <h1>The Hollywood Squares!</h1>
-    <!-- <h2>Score:<p id="player_score"><%= session['user_score'] %></p> </h2>
-    <h2><%= session['result'] %></h2> -->
-    <!-- <button id="reset">Reset game</button> -->
+<div id="header">
+  <h1>The Hollywood Squares!</h1>
+  <!-- <h2>Score:<p id="player_score"><%= session['user_score'] %></p> </h2>
+  <h2><%= session['result'] %></h2> -->
+  <!-- <button id="reset">Reset game</button> -->
 
-    <form action="/movie" method="post" id="movie_form" accept-charset="utf-8">
-      Pick a Movie: <input type="text" name="movie">
-      <button type="submit" id="find">Find</button>
-    </form>
-  </div>
+  <form action="/movie" method="post" id="movie_form" accept-charset="utf-8">
+    Pick a Movie: <input type="text" name="movie">
+    <button type="submit" id="find">Find</button>
+  </form>
+</div>
 
-<div id="game"></div>
-<div id="cast"></div>
+<div id="successMessage">
+   <h2>You did it!</h2>
+   <button onclick="init()">Play Again</button>
+ </div>
+ 
+<div id="content">
+  <div id="game"></div>
+  <div id="cast"></div>
+</div>
