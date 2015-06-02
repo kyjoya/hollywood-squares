@@ -41,7 +41,7 @@ $(function() {
       dataType: "json",
       success: function(data) {
         for(var i = 0; i < data["photos"].length; i++) {
-          $('.squares').append('<div id="square"><div class="photos" id="tile_'+i+'"><img height="180px" width="180px" src=' + data["photos"][i] + '></div><div height="30" width="180px" class="answer" id="answer'+i+'"></div></div>');
+          $('.squares').append('<div id="square"><div class="photos" id="tile_'+i+'"><img height="180px" width="200px" src=' + data["photos"][i] + '></div><div height="80px" width="180px" class="answer" id="answer'+i+'"></div></div>');
           $(dropit(i))
         };
         for(var i = 0; i < data["cast"].length; i++) {
